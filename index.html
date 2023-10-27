@@ -1,208 +1,79 @@
 <!DOCTYPE html>
 <html>
+  <meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.4/p5.min.js"></script>
+  
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portofolio</title>
-
-	<!-- Font Awesome cdn-->
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">\
-	<!-- Kostum CSS Style -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
+  <title>For You 😊</title>
 </head>
 <body>
+   <!-- Ganti Audio di sini -->
+   <audio src="https://riskimiss22.github.io/sofia.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="https://i.pinimg.com/564x/d9/62/32/d96232ee2f229e71b7c83231c12c4884.jpg" id="wallpaper"/><div id="beneranblur"></div>
+   </div>
+   
+   <div id='Content'>
 
-<!-- header start -->
-<header>
-	
-	<div class="user">
-		<img src="image/profile.jpg" alt="Image Not Found">
-		<h3 class="nama">Riski Mis Panda</h3>
-		<p class="post">Web Developer</p>
-	</div>
+     <div id="kadoIn">
+       <!-- Tombol Surat --><img src="https://i.pinimg.com/originals/c6/ca/20/c6ca2056e0ff2b981cdfc55cb46e2950.gif"/>
+     </div>
+     <p id="ket">Klik Gambar</p>
 
-	<nav class="navbar">
-		<ul>
-			<li><a href="#home">home</a></li>
-			<li><a href="#about">about</a></li>
-			<li><a href="#education">education</a></li>
-			<li><a href="#portofolio">portofolio</a></li>
-			<li><a href="#contact">contact</a></li>
-		</ul>
-	</nav>
+     <div class="kumpulanstiker">
+         <!-- Stiker untuk Konten -->
+         <img src="https://i.pinimg.com/originals/b8/46/b2/b846b276c0b8f515948393d74c259a0e.gif" id="fotostiker"/>
+         <img src="https://i.pinimg.com/originals/bc/22/8c/bc228cddf119c6ff397a658559551df9.gif" id="fotostiker2"/>
+         <img src="https://i.pinimg.com/originals/f3/46/fa/f346fab9182f7d75f91526b46d89a6b9.gif" id="fotostiker3"/>
+         <img src="https://i.pinimg.com/originals/bd/e3/8c/bde38c3c137b4d8dce125ecca138ec72.gif" id="fotostiker4"/>
+         <img src="https://i.pinimg.com/originals/15/79/9f/15799fcef86c0de349713706d71f26c7.gif" id="fotostiker5"/>
+         <img src="https://i.pinimg.com/originals/17/96/8b/17968b574908bc5f806b792618e41961.gif" id="fotostiker6"/>
+         <img src="https://i.pinimg.com/originals/3e/31/72/3e3172885e4def65dd2efa923fcec6d2.gif" id="fotostiker7"/>
+     </div>
+     <p id="halo" class="halo"></p>
+     <!-- Konten Pesan Setelah Aksi -->
+     <p id="halo2" class="halo">Sekian dan Terimakasih ✨</p>
+     
+     <!-- Konten Pesan Akhir -->
+     <p id="kalimatbawah">Oh Iya</p> 
+     <p id="kalimatbawah2" class="sembunyi">Semangat Kuliahnya 😊🤭</p> 
+     <p id="kalimatbawah3" class="sembunyi">✌️</p>
+       
+     <div><blockquote id='bq' data-text='&#9829;'>
 
-</header>
-<!-- header end -->
+       <!-- Konten Pembukaan -->
+       <p id="kalimat">Hai Sayang, Apa Kabar? 😅</p>
+       <p id="kalimatb">Maafin Aku ya, Selama ini selalu bikin kamu marah dan kesel 😅</p>
+       <p id="kalimatc">Pokoknya Harus Maafin ya 🤭</p>
+       <p id="kalimatd">I LOVE YOU SAYANG</p>
+       <p id="kalimate"></p>
+       <!-- <p id="kalimatf">Gabole Ngambek 😤</p> -->
+       
+       <p id="opsL">Klik untuk Lanjut</p>
+       
+     </blockquote></div>
 
-<div id="menu" class="fas fa-bars"></div>
+     <!-- Tombol Kirim Pesan -->
+     <div id="Tombol"><p id="By"></p></div>
 
-<!-- home section start -->
-<section class="home" id="home">
-	
-	<h3>Hi There !</h3>
-	<h1>I'M<span> riski mis panda</span></h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat.</p>
-	<a href="#about"><button class="btn">about me<i class="fas fa-user"></i></button></a>
-
-</section>
-<!-- home section end -->
-
-<!-- about section start -->
-<section class="about" id="about">
-	
-	<h1 class="heading"> <span>about</span> me </h1>
-
-	<div class="row">
-		
-		<div class="info">
-			
-			<h3> <span> name : </span> riski mis panda </h3>
-			<h3> <span> age : </span> 23 </h3>
-			<h3> <span> post : </span> web developer </h3>
-			<h3> <span> language : </span> indonesia </h3>
-			<a href="#"><button class="btn">download CV <i class="fas fa-download"></i></button></a>
-
-		</div>
-
-		<div class="counter">
-			
-			<div class="box">
-				<span>2+</span>
-				<h3>years of experience</h3>
-			</div>
-
-			<div class="box">
-				<span>100+</span>
-				<h3>project completed</h3>
-			</div>
-
-			<div class="box">
-				<span>244+</span>
-				<h3>happy clients</h3>
-			</div>
-
-			<div class="box">
-				<span>5+</span>
-				<h3>awards won</h3>
-			</div>
-
-		</div>
-
-	</div>
-
-</section>
-<!-- about section end -->
-
-<!-- education section start -->
-<section class="education" id="education">
-	
-	<h1 class="heading"> my <span>education</span> me </h1>
-
-	<div class="box-container">
-		
-		<div class="box">
-			<i class="fas fa-graduation-cap"></i>
-			<span>2014</span>
-			<h3>smpn 1 saptosari</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</p>
-		</div>
-
-		<div class="box">
-			<i class="fas fa-graduation-cap"></i>
-			<span>2016</span>
-			<h3>man 1 gunungkidul</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</p>
-		</div>
-
-		<div class="box">
-			<i class="fas fa-graduation-cap"></i>
-			<span>2022</span>
-			<h3>universitas amikom yogyakarta</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</p>
-		</div>
-
-	</div>
-
-</section>
-<!-- education section end -->
-
-<!-- portofolio section start -->
-<section class="portofolio" id="portofolio">
-	
-	<h1 class="heading"> my <span>portofolio</span> </h1>
-
-	<div class="box-container">
-		
-		<div class="box">
-			<img src="image/mblayang.png" alt="No Picture">
-		</div>
-
-		<div class="box">
-			<img src="image/mi2.png" alt="No Picture">
-		</div>
-
-	</div>
-
-</section>
-<!-- portofolio section end -->
-
-<!-- contact section start -->
-<section class="contact" id="contact">
-	
-	<h1 class="heading"> <span>contact</span> me </h1>
-
-	<div class="row">
-		
-		<div class="content">
-			
-			<h3 class="tittle">contact info</h3>
-
-			<div class="info">
-				<h3><i class="fas fa-envelope"></i>riskimiss22@gmail.com</h3>
-				<h3><i class="fas fa-phone"></i>+6282243613621</h3>
-				<h3><i class="fas fa-map-marker-alt"></i>temanggung, jetis, saptosari, gunungkidul</h3>
-			</div>
-
-		</div>
-
-		<form action="">
-			
-			<input type="text" name="" placeholder="name" class="box">
-			<input type="email" name="" placeholder="email" class="box">
-			<input type="text" name="" placeholder="project" class="box">
-			<textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-			<button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i></button>
-
-		</form>
-
-	</div>
-
-</section>
-<!-- contact section end -->
-
-
-
-
-
-
-
-	<!-- Jquery cdn -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-	<!-- Custom js File -->
+     <!-- Pesan yang dikirim ke WhatsApp -->
+<!--      <span id="pesanWA" class="sembunyi">Aww, GoodNight too!</span> -->
+     
+   </div>
+<!-- Jangan Edit Bagian Ini -->
 <script type="text/javascript" src="js/script.js"></script>
-
+<script type="text/javascript" src="js/animasi.js"></script>
+<!-- Sampai Sini -->
 </body>
 </html>
